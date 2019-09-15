@@ -1,14 +1,31 @@
-# Description
-Text Classification using Convolution Neural Nets with Tensorflow
+# Song lyrics Generator
+This repo focusses on using LSTMs to generate song lyrics.
 
 ## Requirements
-* Requirements to run the code are present in the requirements.txt file
-* Simple run "pip install -r requirements.txt" from virtual environment or globally.
 
-## Data Description
-Dataset being used here is news-dataset provided by bbc and is for research purpose only. Link of dataset : [link](http://mlg.ucd.ie/datasets/bbc.html)
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the requirements.
 
-## How to run
-* After installing required libaries, run main.py from src folder
-* Download data [link](http://mlg.ucd.ie/files/datasets/bbc-fulltext.zip) and place it accordingly as mentioned in data readme file.
-* Make sure the data path is correct in main.py file
+```bash
+pip install tensorflow
+pip install keras
+pip install nltk
+pip install pandas
+```
+
+## Data
+
+Data used for the project was obtained from Kaggle. Link to the dataset: https://www.kaggle.com/gyani95/380000-lyrics-from-metrolyrics
+
+## Usage
+
+```bash
+python main.py
+```
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
