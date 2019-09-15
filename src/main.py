@@ -27,7 +27,7 @@ def gen_data(lyrics_data_sample,len):
         print("length provided exceeded actual rows")
 
 def main():
-    lyrics_data = pd.read_csv("../data/380000-lyrics-from-metrolyrics/lyrics.csv")
+    lyrics_data = pd.read_csv("../data/lyrics.csv")
     data = gen_data(lyrics_data,10000)
     tokens = list()
     for row in data['lyrics']:
@@ -66,7 +66,7 @@ def main():
 
     #save model
     nlg_model.save_model()
-    
+
     #generate lyrics sequences given some seed_text
     generated = nlg_model.generate_seq(tokenizer, 50, lines[randint(0,len(lines))], 50)
     print("Given the seed text as ---> ",lines[randint(0,len(lines))])
